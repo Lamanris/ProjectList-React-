@@ -1,0 +1,18 @@
+/* purgecss start ignore */
+@tailwind  base;
+@tailwind  components;
+/* purgecss end ignore */
+
+@tailwind utilities;
+
+
+.projectList__card {
+  min-width: 300px;
+  min-height: 350px;
+}
+
+.projectList__img {
+  max-width: 310px;
+  max-height: 205px;
+  object-fit: contain;
+}

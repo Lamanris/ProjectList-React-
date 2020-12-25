@@ -1,0 +1,67 @@
+.loginBtn {
+  background-color: #c308d2;
+}
+
+.loginBtn:hover{
+  background-color: #ef28ff;
+}
+
+.login__form {
+  min-width: 300px;
+}
+
+.forgotPass {
+  color: #c308d2;
+}
+.forgotPass:hover {
+  color: #ef28ff;
+}
+
+.passRememberLabel {
+  display: block;
+  position: relative;
+  user-select: none;
+  padding-left: 30px;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  &:hover input ~ .passRememberCheckmark {
+    background-color: #ccc;
+  }
+  & input:checked ~ .passRememberCheckmark {
+    background-color: #c308d2;
+  }
+  & input:checked ~ .passRememberCheckmark:after {
+    display: block;
+  }
+  & .passRememberCheckmark:after {
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+.passRememberCheckmark {
+  position: absolute;
+  top: 13%;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 4px;
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}

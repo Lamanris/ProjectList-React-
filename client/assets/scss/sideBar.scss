@@ -1,0 +1,24 @@
+.sideBar {
+  min-width: 300px;
+  min-height: 100vh;
+}
+
+.sideBar__menu {
+  background-color: #3c1073;
+}
+.sideBar__menuIcon {
+  margin-top: 2px;
+}
+.sideBar__menuItem.active{
+  background-color: #24054b;
+  position: relative;
+  &::before {
+    content: '';
+    width: 12px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #c308d2;
+  }
+}
